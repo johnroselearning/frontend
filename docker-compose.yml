@@ -1,0 +1,38 @@
+services:
+  # =========================
+  # Frontend - Development Mode
+  # =========================
+
+  frontend_development:
+    build:
+      context: ./
+      dockerfile: Dockerfile.dev
+    ports:
+      - "5173:5173" # Maps Vite dev server to localhost 5173
+    volumes:
+      - ./:/app # Live-reload for frontend
+    command: npm run dev
+
+  # =========================
+  # Frontend - Production Mode
+  # =========================
+  frontend_prod:
+    build:
+      context: ./
+      dockerfile: Dockerfile.prod
+    ports:
+      - "5174:5173" # Maps production frontend to localhost 5174
+
+  # =========================
+  # MongoDB (for development use)
+  # =========================
+  mongodb:
+    image: mongo:latest # Pulls official MongoDB image
+    ports:
+      - "27017:27017" # Maps MongoDB default port
+    volumes:
+      - mongo-data:/data/db # Persist MongoDB data on your machine
+
+volumes:
+  mongo-data: # Named volume for MongoDB data persistence
+

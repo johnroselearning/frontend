@@ -17,5 +17,5 @@ jobs:
 
       - name: Build and push Docker image
         run: |
-          docker build -t your-dockerhub-username/frontend:latest -f Dockerfile.dev .
-          docker push your-dockerhub-username/frontend:latest
+          docker build -t johnroselearning/frontend:latest -f Dockerfile.dev .
+          docker push johnroselearning/frontend:latest

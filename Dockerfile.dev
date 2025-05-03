@@ -8,4 +8,31 @@ RUN npm install
 
 COPY . .
 
-CMD ["npm", "run", "dev"]
+CMD ["npm", "run", "dev", "--host", "0.0.0.0"]
+
+# minikube start
+# docker build -t frontend -f Dockerfile.dev .
+
+# kubectl apply -f frontend-deployment.yml
+
+# kubectl get pods
+
+# kubectl logs 
+
+# minikube service frontend-service --url
+
+
+# skaffold dev 
+
+# kubectl port-forward service/frontend-service 5173:30073
+
+# kubectl get svc frontend-service
+
+# kubectl port-forward service/frontend-service 5173:30073
+
+
+# minikube tunnel
+
+# docker run -p 5173:5173 frontend
+
+# docker push johnroselearning/frontend:latest

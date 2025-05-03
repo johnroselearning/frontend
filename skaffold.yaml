@@ -1,0 +1,20 @@
+apiVersion: skaffold/v4beta6
+kind: Config
+metadata:
+  name: frontend-app
+build:
+  artifacts:
+    - image: johnroselearning/frontend
+      context: .
+      docker:
+        dockerfile: Dockerfile.dev
+  local:
+    useDockerCLI: true
+    push: false
+manifests:
+  rawYaml:
+    - frontend-deployment.yml
+portForward:
+  - resourceType: deployment
+    resourceName: frontend-deployment
+    port: 5173

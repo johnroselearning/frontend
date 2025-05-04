@@ -1,0 +1,19 @@
+# Install nvm if not already installed
+
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
+
+# Restart your terminal or source nvm
+
+source ~/.bashrc
+
+# Install a stable Node.js version (e.g., 20.x)
+
+nvm install 20
+
+# Use the installed version
+
+nvm use 20
+
+# Verify the Node.js version
+
+node -v

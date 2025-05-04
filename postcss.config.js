@@ -10,6 +10,7 @@
 //   autoprefixer: {},
 // };
 
+
 export default {
   plugins: {
     tailwindcss: {},

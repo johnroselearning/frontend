@@ -53,7 +53,7 @@
 
 
 import { NavLink } from 'react-router-dom';
-import { FaTachometerAlt, FaMapMarkedAlt, FaCalendarAlt, FaCog } from 'react-icons/fa';
+import { FaTachometerAlt, FaMapMarkedAlt, FaCalendarAlt, FaCog, FaPlane  } from 'react-icons/fa';
 
 const Sidebar = () => {
   return (
@@ -67,6 +67,10 @@ const Sidebar = () => {
           }
         >
           <FaTachometerAlt className="mr-2" />Dashboard
+        </NavLink>
+
+        <NavLink to="/travel-model" className={({ isActive }) => isActive ? "text-blue-400" : "text-white"}>
+          <FaPlane className="inline mr-2" />Travel Model
         </NavLink>
         <NavLink 
           to="/places" 

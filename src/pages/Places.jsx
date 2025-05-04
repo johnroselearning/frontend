@@ -1,5 +1,5 @@
 import PlaceCard from "../components/PlaceCard";
-
+import React, { useState } from 'react';
 const dummyPlaces = [
   {
     name: "Tea Gardens",

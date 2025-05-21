@@ -29,6 +29,8 @@ import Dashboard from './pages/Dashboard';
 import Places from './pages/Places';
 import Bookings from './pages/Bookings';
 import Settings from './pages/Settings';
+import ChatBot from './pages/ChatBot';
+import BlogSection from './pages/BlogSection';
 
 function App() {
   return (
@@ -39,6 +41,8 @@ function App() {
           <Route path="places" element={<Places />} />
           <Route path="bookings" element={<Bookings />} />
           <Route path="settings" element={<Settings />} />
+          <Route path="chatbot" element={<ChatBot />} />
+          <Route path="blogsection" element={<BlogSection />} />
         </Route>
       </Routes>
     </Router>

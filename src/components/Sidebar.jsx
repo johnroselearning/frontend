@@ -96,6 +96,22 @@ const Sidebar = () => {
         >
           <FaCog className="mr-2" />Settings
         </NavLink>
+        <NavLink 
+          to="/chatbot" 
+          className={({ isActive }) => 
+            `flex items-center ${isActive ? 'text-blue-400' : 'text-white'}`
+          }
+        >
+          <FaCog className="mr-2" />Chatbot
+        </NavLink>
+         <NavLink 
+          to="/blog" 
+          className={({ isActive }) => 
+            `flex items-center ${isActive ? 'text-blue-400' : 'text-white'}`
+          }
+        >
+          <FaCog className="mr-2" />Blog
+        </NavLink>
       </nav>
     </div>
   );

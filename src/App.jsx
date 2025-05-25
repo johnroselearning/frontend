@@ -31,6 +31,9 @@ import Bookings from './pages/Bookings';
 import Settings from './pages/Settings';
 import ChatBot from './pages/ChatBot';
 import BlogSection from './pages/BlogSection';
+import GenerateItinerary from './pages/GenerateItinerary';
+import KeralaGuide from "./pages/KeralaGuide";
+import Kerala from "./routes/Kerala";
 
 function App() {
   return (
@@ -43,6 +46,9 @@ function App() {
           <Route path="settings" element={<Settings />} />
           <Route path="chatbot" element={<ChatBot />} />
           <Route path="blogsection" element={<BlogSection />} />
+          <Route path="generateItinerary" element={<GenerateItinerary />} />
+          <Route path="KeralaGuide" element={<KeralaGuide />} />
+           <Route path="Kerala" element={<Kerala />} />
         </Route>
       </Routes>
     </Router>

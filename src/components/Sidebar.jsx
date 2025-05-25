@@ -105,12 +105,39 @@ const Sidebar = () => {
           <FaCog className="mr-2" />Chatbot
         </NavLink>
          <NavLink 
-          to="/blog" 
+          to="/blogSection" 
           className={({ isActive }) => 
             `flex items-center ${isActive ? 'text-blue-400' : 'text-white'}`
           }
         >
           <FaCog className="mr-2" />Blog
+        </NavLink>
+
+         <NavLink 
+          to="/generateItinerary" 
+          className={({ isActive }) => 
+            `flex items-center ${isActive ? 'text-blue-400' : 'text-white'}`
+          }
+        >
+          <FaCog className="mr-2" />Generate Itineary
+        </NavLink>
+
+        <NavLink 
+          to="/KeralaGuide" 
+          className={({ isActive }) => 
+            `flex items-center ${isActive ? 'text-blue-400' : 'text-white'}`
+          }
+        >
+          <FaCog className="mr-2" />Kerala Guide
+        </NavLink>
+
+         <NavLink 
+          to="/Kerala" 
+          className={({ isActive }) => 
+            `flex items-center ${isActive ? 'text-blue-400' : 'text-white'}`
+          }
+        >
+          <FaCog className="mr-2" />Kerala
         </NavLink>
       </nav>
     </div>

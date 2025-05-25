@@ -1,0 +1,137 @@
+export const blogTranslations = {
+  en: {
+    blog: {
+      title: "Kerala Travel Blog",
+      subtitle: "Discover the beauty of God's Own Country",
+      categories: {
+        all: "All Posts",
+        destinations: "Destinations",
+        culture: "Culture & Heritage",
+        food: "Food & Cuisine",
+        adventure: "Adventure",
+        tips: "Travel Tips"
+      },
+      menu: {
+        latest: "Latest Posts",
+        popular: "Popular Posts",
+        categories: "Categories",
+        destinations: "Top Destinations",
+        about: "About Kerala"
+      },
+      readMore: "Read More",
+      readTime: "min read",
+      publishedOn: "Published on",
+      author: "By",
+      searchPlaceholder: "Search blog posts...",
+      noResults: "No posts found matching your search.",
+      backToHome: "Back to Home"
+    },
+    posts: {
+      munnar: {
+        title: "Munnar: The Tea Capital of Kerala",
+        excerpt: "Explore the misty hills, lush tea plantations, and cool climate of Munnar, one of Kerala's most beloved hill stations.",
+        content: "Nestled in the Western Ghats at an altitude of 1,600 meters above sea level, Munnar is a breathtaking hill station..."
+      },
+      backwaters: {
+        title: "Alleppey Backwaters: Venice of the East",
+        excerpt: "Experience the serene beauty of Kerala's backwaters with a houseboat cruise through the network of canals and lakes.",
+        content: "The backwaters of Alleppey offer a unique glimpse into rural Kerala life..."
+      },
+      ayurveda: {
+        title: "Ayurveda in Kerala: Ancient Healing Traditions",
+        excerpt: "Discover the authentic Ayurvedic treatments and wellness practices that have made Kerala famous worldwide.",
+        content: "Kerala is considered the birthplace of Ayurveda, the ancient Indian system of medicine..."
+      }
+    }
+  },
+  ml: {
+    blog: {
+      title: "കേരള യാത്രാ ബ്ലോഗ്",
+      subtitle: "ദൈവത്തിന്റെ സ്വന്തം നാടിന്റെ സൗന്ദര്യം കണ്ടെത്തുക",
+      categories: {
+        all: "എല്ലാ പോസ്റ്റുകളും",
+        destinations: "സ്ഥലങ്ങൾ",
+        culture: "സംസ്കാരവും പാരമ്പര്യവും",
+        food: "ഭക്ഷണവും പാചകരീതിയും",
+        adventure: "സാഹസികത",
+        tips: "യാത്രാ നുറുങ്ങുകൾ"
+      },
+      menu: {
+        latest: "പുതിയ പോസ്റ്റുകൾ",
+        popular: "ജനപ്രിയ പോസ്റ്റുകൾ",
+        categories: "വിഭാഗങ്ങൾ",
+        destinations: "പ്രധാന സ്ഥലങ്ങൾ",
+        about: "കേരളത്തെക്കുറിച്ച്"
+      },
+      readMore: "കൂടുതൽ വായിക്കുക",
+      readTime: "മിനിറ്റ് വായന",
+      publishedOn: "പ്രസിദ്ധീകരിച്ചത്",
+      author: "രചയിതാവ്",
+      searchPlaceholder: "ബ്ലോഗ് പോസ്റ്റുകൾ തിരയുക...",
+      noResults: "നിങ്ങളുടെ തിരയലിന് അനുയോജ്യമായ പോസ്റ്റുകൾ കണ്ടെത്തിയില്ല.",
+      backToHome: "ഹോമിലേക്ക് മടങ്ങുക"
+    },
+    posts: {
+      munnar: {
+        title: "മുന്നാർ: കേരളത്തിന്റെ ചായ തലസ്ഥാനം",
+        excerpt: "കേരളത്തിലെ ഏറ്റവും പ്രിയപ്പെട്ട കുന്നിൻ പ്രദേശങ്ങളിലൊന്നായ മുന്നാറിലെ മൂടൽമഞ്ഞുള്ള കുന്നുകൾ, പച്ചപ്പ് നിറഞ്ഞ ചായത്തോട്ടങ്ങൾ, തണുത്ത കാലാവസ്ഥ എന്നിവ അന്വേഷിക്കുക.",
+        content: "സമുദ്രനിരപ്പിൽ നിന്ന് 1,600 മീറ്റർ ഉയരത്തിൽ പശ്ചിമഘട്ടത്തിൽ സ്ഥിതി ചെയ്യുന്ന മുന്നാർ ഒരു അതിമനോഹരമായ കുന്നിൻ പ്രദേശമാണ്..."
+      },
+      backwaters: {
+        title: "ആലപ്പുഴ കായൽ: കിഴക്കിന്റെ വെനീസ്",
+        excerpt: "കനാലുകളുടെയും തടാകങ്ങളുടെയും ശൃംഖലയിലൂടെയുള്ള ഹൗസ്ബോട്ട് യാത്രയിലൂടെ കേരളത്തിന്റെ കായലുകളുടെ ശാന്തമായ സൗന്ദര്യം അനുഭവിക്കുക.",
+        content: "ആലപ്പുഴയിലെ കായലുകൾ കേരളത്തിലെ ഗ്രാമീണ ജീവിതത്തിന്റെ അതുല്യമായ കാഴ്ച നൽകുന്നു..."
+      },
+      ayurveda: {
+        title: "കേരളത്തിലെ ആയുർവേദം: പുരാതന രോഗശാന്തി പാരമ്പര്യങ്ങൾ",
+        excerpt: "കേരളത്തെ ലോകമെമ്പാടും പ്രസിദ്ധമാക്കിയ ആധികാരിക ആയുർവേദ ചികിത്സകളും ആരോഗ്യ രീതികളും കണ്ടെത്തുക.",
+        content: "പുരാതന ഇന്ത്യൻ വൈദ്യശാസ്ത്ര സമ്പ്രദായമായ ആയുർവേദത്തിന്റെ ജന്മസ്ഥലമായി കേരളം കണക്കാക്കപ്പെടുന്നു..."
+      }
+    }
+  },
+  hi: {
+    blog: {
+      title: "केरल यात्रा ब्लॉग",
+      subtitle: "भगवान के अपने देश की सुंदरता की खोज करें",
+      categories: {
+        all: "सभी पोस्ट",
+        destinations: "गंतव्य",
+        culture: "संस्कृति और विरासत",
+        food: "भोजन और व्यंजन",
+        adventure: "रोमांच",
+        tips: "यात्रा सुझाव"
+      },
+      menu: {
+        latest: "नवीनतम पोस्ट",
+        popular: "लोकप्रिय पोस्ट",
+        categories: "श्रेणियाँ",
+        destinations: "टॉप डेस्टिनेशन",
+        about: "केरल के बारे में"
+      },
+      readMore: "और पढ़ें",
+      readTime: "मिनट पढ़ें",
+      publishedOn: "प्रकाशित",
+      author: "द्वारा",
+      searchPlaceholder: "ब्लॉग पोस्ट खोजें...",
+      noResults: "आपकी खोज से मेल खाने वाली कोई पोस्ट नहीं मिली।",
+      backToHome: "घर वापस जाएं"
+    },
+    posts: {
+      munnar: {
+        title: "मुन्नार: केरल की चाय राजधानी",
+        excerpt: "केरल के सबसे प्रिय हिल स्टेशनों में से एक मुन्नार की धुंधली पहाड़ियों, हरे-भरे चाय बागानों और ठंडी जलवायु का अन्वेषण करें।",
+        content: "समुद्र तल से 1,600 मीटर की ऊंचाई पर पश्चिमी घाट में स्थित मुन्नार एक सांस लेने वाला हिल स्टेशन है..."
+      },
+      backwaters: {
+        title: "अल्लेप्पी बैकवाटर्स: पूर्व का वेनिस",
+        excerpt: "नहरों और झीलों के नेटवर्क के माध्यम से हाउसबोट क्रूज के साथ केरल के बैकवाटर्स की शांत सुंदरता का अनुभव करें।",
+        content: "अल्लेप्पी के बैकवाटर्स ग्रामीण केरल जीवन की एक अनूठी झलक प्रदान करते हैं..."
+      },
+      ayurveda: {
+        title: "केरल में आयुर्वेद: प्राचीन उपचार परंपराएं",
+        excerpt: "प्रामाणिक आयुर्वेदिक उपचार और कल्याण प्रथाओं की खोज करें जिन्होंने केरल को दुनिया भर में प्रसिद्ध बनाया है।",
+        content: "केरल को आयुर्वेद की जन्मस्थली माना जाता है, जो प्राचीन भारतीय चिकित्सा प्रणाली है..."
+      }
+    }
+  }
+};

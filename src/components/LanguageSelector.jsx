@@ -7,7 +7,9 @@ const LanguageSelector = ({ currentLanguage, onLanguageChange }) => {
   const languages = {
     en: { name: 'English', flag: '🇺🇸' },
     ml: { name: 'മലയാളം', flag: '🇮🇳' },
-    hi: { name: 'हिंदी', flag: '🇮🇳' }
+    hi: { name: 'हिंदी', flag: '🇮🇳' },
+    es: { name: 'Español', flag: '🇪🇸' },
+    de: { name: 'Deutsch', flag: '🇩🇪' }
   };
 
   return (

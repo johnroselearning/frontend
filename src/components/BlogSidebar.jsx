@@ -9,18 +9,18 @@ const BlogSidebar = ({ activeCategory, onCategoryChange }) => {
   const menuItems = [
     { id: 'latest', label: t('blog.menu.latest'), path: '/blog' },
     { id: 'popular', label: t('blog.menu.popular'), path: '/blog/popular' },
-    { id: 'categories', label: t('blog.menu.categories'), path: '/blog/categories' },
+    { id: 'categories', label: t('blog.menu.categories'), path: '/blog/categories'},
     { id: 'destinations', label: t('blog.menu.destinations'), path: '/blog/destinations' },
     { id: 'about', label: t('blog.menu.about'), path: '/blog/about-kerala' }
   ];
 
   const categories = [
-    { id: 'all', label: t('blog.categories.all') },
-    { id: 'destinations', label: t('blog.categories.destinations') },
-    { id: 'culture', label: t('blog.categories.culture') },
-    { id: 'food', label: t('blog.categories.food') },
-    { id: 'adventure', label: t('blog.categories.adventure') },
-    { id: 'tips', label: t('blog.categories.tips') }
+    { id: 'all', label: t('blog.categories.all')},//,count: categories.length },
+    { id: 'destinations', label: t('blog.categories.destinations')},//,count: categories.filter(p => p.category === 'destinations').length },
+    { id: 'culture', label: t('blog.categories.culture')},// ,count: categories.filter(p => p.category === 'culture').length },
+    { id: 'food', label: t('blog.categories.food')},//, count: categories.filter(p => p.category === 'food').length },
+    { id: 'adventure', label: t('blog.categories.adventure')},//count: categories.filter(p => p.category === 'adventure').length },
+    { id: 'tips', label: t('blog.categories.tips')} //count: categories.filter(p => p.category === 'tips').length}
   ];
 
   return (

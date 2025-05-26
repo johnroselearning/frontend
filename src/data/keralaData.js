@@ -82,3 +82,80 @@ export const keralaExperiences = [
   "Watch Kathakali performances on board.",
   "Taste Kerala Sadya served on banana leaves.",
 ];
+const keralaCuisine = [
+  {
+    name: "Sadya",
+    description: "A traditional vegetarian feast served on a banana leaf.",
+    image: "/images/sadya.jpg",
+  },
+  {
+    name: "Karimeen Pollichathu",
+    description: "Pearl spot fish marinated and grilled in banana leaves.",
+    image: "/images/karimeen.jpg",
+  },
+  {
+    name: "Appam with Stew",
+    description: "Soft rice pancakes served with a coconut milk stew.",
+    image: "/images/appam.jpg",
+  },
+];
+export const keralaFestivals = [
+  {
+    name: "Onam",
+    description: "The harvest festival celebrated with feasts, dances, and boat races."
+  },
+  {
+    name: "Vishu",
+    description: "The New Year festival marked by the Vishukkani and fireworks."
+  },
+  {
+    name: "Thrissur Pooram",
+    description: "A grand temple festival known for its elephant processions and fireworks."
+  },
+  {
+    name: "Navaratri",
+    description: "A nine-night festival celebrating the goddess Durga with dances and music."
+  },
+  {
+    name: "Christmas",
+    description: "Celebrated with great enthusiasm, especially in coastal regions."
+  },
+  {
+    name: "Eid",
+    description: "Celebrated by the Muslim community with prayers and feasts."
+  },
+  {
+    name: "Maha Shivaratri",
+    description: "A Hindu festival dedicated to Lord Shiva, celebrated with night-long vigils."
+  },
+  {
+    name: "Attukal Pongala",
+    description: "A unique festival where women take part in a mass cooking competition."}
+  ];
+  const keralaFood = [
+  {
+    name: "Sadya",
+    description: "A traditional vegetarian feast served on a banana leaf, featuring a variety of dishes like sambar, avial, and payasam.",
+    image: "/images/sadya.jpg"
+  },
+  {
+    name: "Karimeen Pollichathu",
+    description: "Pearl spot fish marinated with spices and grilled in banana leaves, a must-try coastal delicacy.",
+    image: "/images/karimeen.jpg"
+  },
+  {
+    name: "Appam with Stew",
+    description: "Soft rice pancakes served with a rich coconut milk stew, perfect for breakfast or dinner.",
+    image: "/images/appam.jpg"
+  },
+  {
+    name: "Malabar Biryani",
+    description: "A fragrant rice dish cooked with spices and meat, originating from the Malabar region.",
+    image: "/images/biryani.jpg"
+  },
+  {
+    name: "Puttu and Kadala Curry",
+    description: "Steamed rice cake layered with coconut, served with black chickpea curry.",
+    image: "/images/puttu.jpg"
+  }
+];

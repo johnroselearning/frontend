@@ -1,7 +1,8 @@
-import React from 'react';
+import React , { useState, useEffect,useMemo }from 'react';
 import { Link } from 'react-router-dom';
 import { Calendar, User, Clock } from 'lucide-react';
 import { useTranslation } from '../hooks/useTranslation';
+import blogPosts, { getBlogPostById, getBlogPostsByCategory, getRecentPosts } from '../data/blogPosts.js';
 
 const BlogPost = ({ post, isPreview = true }) => {
   const { t } = useTranslation();
@@ -37,9 +38,10 @@ const BlogPost = ({ post, isPreview = true }) => {
         
         {!isPreview && (
           <div className="prose max-w-none">
-            <p>{post.content}</p>
+            <p>t({post.content})</p>
           </div>
         )}
+        
       </div>
     </article>
   );

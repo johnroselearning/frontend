@@ -12,6 +12,7 @@ import Kerala from "./routes/Kerala";
 import BlogLayout from './components/BlogLayout';
 
 function App() {
+  console.log("App component rendered");
   return (
     <Router>
       <Routes>
@@ -26,6 +27,8 @@ function App() {
           <Route path="KeralaGuide" element={<KeralaGuide />} />
           <Route path="Kerala" element={<Kerala />} />
           <Route path="/bloglayout/*" element={<BlogLayout />} />
+          <Route path="/blog/*" element={<BlogLayout />} />
+          {/* <Route path="/post/*" element={<BlogLayout />} /> */}
         </Route>
       </Routes>
     </Router>

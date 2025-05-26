@@ -16,6 +16,10 @@ const BlogLayout = () => {
   const { t } = useTranslation();
   const [activeCategory, setActiveCategory] = useState('all');
 
+console.log('BlogLayout rendered with activeCategory:', activeCategory);
+console.log('Blog posts:', blogPosts);
+console.log('Blog post count:', blogPosts.length);
+console.log('Blog post id:', blogPosts.id);
 
   // const recentPosts = getRecentPosts(3);
   // const adventurePosts = getBlogPostsByCategory('adventure');
@@ -124,6 +128,7 @@ const BlogLayout = () => {
               path="/post/:id" 
               element={<BlogPostDetail posts={blogPosts} />} 
             />
+            
             <Route 
               path="/about-kerala" 
               element={<AboutKeralaPage />} 

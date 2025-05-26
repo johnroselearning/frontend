@@ -6,7 +6,8 @@ import BlogSidebar from './BlogSidebar';
 import BlogGrid from './BlogGrid';
 import BlogPostDetail from './BlogPostDetail';
 import AboutKeralaPage from './AboutKeralaPage';
-
+import SchemaGenerator from './SchemaGenerator';
+import SEO from './SEO';
 
 import blogPosts, { getBlogPostById, getBlogPostsByCategory, getRecentPosts } from '../data/blogPosts.js';
 

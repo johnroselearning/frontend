@@ -1,38 +1,38 @@
 
 const blogPosts = [
-    {
-      id: 'munnar-tea-capital',
-      title: ('posts.munnar.title'),
-      excerpt: ('posts.munnar.excerpt'),
-      content: ('posts.munnar.content'),
-      image: '/api/placeholder/400/240',
-      date: '2024-01-15',
-      author: 'Ravi Kumar',
-      readTime: 5,
-      category: 'destinations'
-    },
-    {
-      id: 'alleppey-backwaters',
-      title: ('posts.backwaters.title'),
-      excerpt: ('posts.backwaters.excerpt'),
-      content: ('posts.backwaters.content'),
-      image: '/api/placeholder/400/240',
-      date: '2024-01-10',
-      author: 'Priya Nair',
-      readTime: 7,
-      category: 'destinations'
-    },
-    {
-      id: 'kerala-ayurveda',
-      title: ('posts.ayurveda.title'),
-      excerpt: ('posts.ayurveda.excerpt'),
-      content: ('posts.ayurveda.content'),
-      image: '/api/placeholder/400/240',
-      date: '2024-01-05',
-      author: 'Dr. Suresh',
-      readTime: 6,
-      category: 'culture'
-    },
+    // {
+    //   id: 'munnar-tea-capital',
+    //   title: ('posts.munnar.title'),
+    //   excerpt: ('posts.munnar.excerpt'),
+    //   content: ('posts.munnar.content'),
+    //   image: '/api/placeholder/400/240',
+    //   date: '2024-01-15',
+    //   author: 'Ravi Kumar',
+    //   readTime: 5,
+    //   category: 'destinations'
+    // },
+    // {
+    //   id: 'alleppey-backwaters',
+    //   title: ('posts.backwaters.title'),
+    //   excerpt: ('posts.backwaters.excerpt'),
+    //   content: ('posts.backwaters.content'),
+    //   image: '/api/placeholder/400/240',
+    //   date: '2024-01-10',
+    //   author: 'Priya Nair',
+    //   readTime: 7,
+    //   category: 'destinations'
+    // },
+    // {
+    //   id: 'kerala-ayurveda',
+    //   title: ('posts.ayurveda.title'),
+    //   excerpt: ('posts.ayurveda.excerpt'),
+    //   content: ('posts.ayurveda.content'),
+    //   image: '/api/placeholder/400/240',
+    //   date: '2024-01-05',
+    //   author: 'Dr. Suresh',
+    //   readTime: 6,
+    //   category: 'culture'
+    // },
         // Destination posts
      { id: 1, title: "Hidden Gems of Santorini", category: "destinations", author: "Maria K.", date: "2024-05-20", readTime: 6,image: "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?w=400", excerpt: "Discover the lesser-known spots in this Greek paradise that most tourists miss." ,  content: ('posts.santorini.content')},
     { id: 2, title: "Tokyo's Best Neighborhoods", category: "destinations", author: "Kenji S.", date: "2024-05-18", readTime: 6,image: "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=400", excerpt: "From bustling Shibuya to peaceful Yanaka, explore Tokyo's diverse districts.",content: ('posts.santorini.content') },

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Search } from 'lucide-react';
 import { useTranslation } from '../hooks/useTranslation';
 import LanguageSelector from './LanguageSelector';
+import SEO from './SEO';
 
 const BlogHeader = () => {
   const { t, currentLanguage, changeLanguage } = useTranslation();
@@ -34,6 +35,8 @@ const BlogHeader = () => {
           </div>
         </div>
       </div>
+
+      
     </header>
   );
 };

@@ -35,6 +35,7 @@ const BlogGrid = ({ posts, category = 'all', postsPerPage = 6 }) => {
   const { t, language } = useTranslation(); // Get current language
   const [currentPage, setCurrentPage] = useState(1);
   const [translatedPosts, setTranslatedPosts] = useState(posts);
+  console.log(category);
   
   // Update translated posts when language changes
   useEffect(() => {

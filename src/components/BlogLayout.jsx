@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Routes, Route } from 'react-router-dom';
+import React, { useState ,useEffect} from 'react';
+import { Routes, Route ,useNavigate,useSearchParams} from 'react-router-dom';
 import { useTranslation } from '../hooks/useTranslation';
 import BlogHeader from './BlogHeader';
 import BlogSidebar from './BlogSidebar';
@@ -15,6 +15,25 @@ import blogPosts, { getBlogPostById, getBlogPostsByCategory, getRecentPosts } fr
 const BlogLayout = () => {
   const { t } = useTranslation();
   const [activeCategory, setActiveCategory] = useState('all');
+
+  const navigate = useNavigate();
+   const [searchParams] = useSearchParams(); // Get query parameters
+
+  useEffect(() => {
+    const categoryParam = searchParams.get('category');
+    if (categoryParam) {
+      setActiveCategory(categoryParam);
+    } else {
+      setActiveCategory('all'); // Default to 'all' if no category param
+    }
+  }, [searchParams]);
+
+   const handleCategoryChange = (category) => {
+    setActiveCategory(category);
+    // Programmatically navigate to the categories route with the selected category
+    // This will trigger the useEffect hook to update the activeCategory state
+    navigate(`/blog/categories?category=${category}`);
+  };
 
 console.log('BlogLayout rendered with activeCategory:', activeCategory);
 console.log('Blog posts:', blogPosts);
@@ -103,7 +122,8 @@ console.log('Blog post id:', blogPosts.id);
       <div className="flex max-w-7xl mx-auto">
         <BlogSidebar 
           activeCategory={activeCategory}
-          onCategoryChange={setActiveCategory}
+          // onCategoryChange={setActiveCategory}
+           onCategoryChange={handleCategoryChange} // Pass the navigation handler
         />
         
         <main className="flex-1 p-6">

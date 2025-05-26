@@ -280,8 +280,63 @@ const blogPosts = [
     excerpt: "Explore one of the world's most diverse marine ecosystems.",
     content: "Dive into a kaleidoscope of coral and marine life in Australia's Great Barrier Reef. Swim alongside turtles, reef sharks, and vibrant fish while witnessing one of Earth’s most awe-inspiring underwater wonders—now in urgent need of protection."
   },
+  {
+  id: 21,
+  title: "The Art of Calligraphy in Iran",
+  category: "culture",
+  author: "Neda H.",
+  date: "2024-05-21",
+  image: "https://images.unsplash.com/photo-1564518098554-3ffdc38c78a0?w=400",
+  excerpt: "Explore the poetic elegance of Persian script and tradition.",
+  content: "In Iran, calligraphy is revered as a spiritual and artistic expression. From the sweeping lines of Nastaʿlīq to intricate Quranic designs, the script reflects centuries of devotion. Visit workshops in Isfahan or Tehran to watch master calligraphers at work, blending ink, paper, and poetry."
+},
 
-  // Travel Tips (21–25) will be completed in next message.
+// Food
+{
+  id: 22,
+  title: "Coastal Cuisine of Kerala",
+  category: "food",
+  author: "Anita V.",
+  date: "2024-05-26",
+  image: "https://images.unsplash.com/photo-1589308078052-918ccf1087a9?w=400",
+  excerpt: "Taste the vibrant flavors of India’s southwest coast.",
+  content: "Kerala’s food is a celebration of the sea and spice. Enjoy tangy fish curries with coconut, crunchy banana chips, and fresh appams. Visit beachside shacks in Alleppey or backwater homestays in Kumarakom for the most authentic, aromatic experiences."
+},
+{
+  id: 23,
+  title: "Savory Stews of the Caucasus",
+  category: "food",
+  author: "Arman B.",
+  date: "2024-05-22",
+  image: "https://images.unsplash.com/photo-1627582469487-ef1f8b11c582?w=400",
+  excerpt: "Hearty dishes that warm the soul from Georgia to Armenia.",
+  content: "The Caucasus is home to comforting cuisine rich in herbs, meats, and tradition. Try kharcho, a spicy beef soup from Georgia, or Armenian khashlama, slow-cooked lamb with vegetables. These meals are often served family-style, with wine, toasts, and laughter."
+},
+
+// Adventure
+{
+  id: 24,
+  title: "Hiking Norway’s Trolltunga",
+  category: "adventure",
+  author: "Erik J.",
+  date: "2024-05-25",
+  image: "https://images.unsplash.com/photo-1508766206392-8bd5cf550d1c?w=400",
+  excerpt: "A dramatic cliff hike with jaw-dropping views over fjords.",
+  content: "Trolltunga, or 'the Troll’s Tongue,' juts out over Lake Ringedalsvatnet, offering an epic reward for an 8–12 hour trek. The trail crosses alpine terrain, snow patches, and rocky ridges. Be prepared—but the panorama is worth every step."
+},
+{
+  id: 25,
+  title: "Caving in Slovenia's Karst Region",
+  category: "adventure",
+  author: "Mateja K.",
+  date: "2024-05-22",
+  image: "https://images.unsplash.com/photo-1524853547741-bf6c6fa16058?w=400",
+  excerpt: "Explore underground cathedrals sculpted by nature.",
+  content: "Slovenia’s Karst caves like Postojna and Škocjan reveal a surreal world beneath the surface. Walk past massive stalactites, subterranean rivers, and echoing chambers. For the truly adventurous, guided spelunking tours lead into wild, unlit passages."
+}
+
+
+
 ];
 
  export default blogPosts;

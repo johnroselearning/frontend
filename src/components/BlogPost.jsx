@@ -210,7 +210,7 @@ const BlogPost = ({ post, isPreview = true }) => {
       <article className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
         <img 
           src={post.image} 
-          alt={post.title}
+          alt={t(post.title)}
           className="w-full h-48 object-cover"
         />
         <div className="p-6">

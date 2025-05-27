@@ -11,10 +11,14 @@ import KeralaGuide from "./pages/KeralaGuide";
 import Kerala from "./routes/Kerala";
 import BlogLayout from './components/BlogLayout';
 
+import { TranslationProvider } from './contexts/TranslationContext'; // Import the provider
+
+
 function App() {
   console.log("App component rendered");
   return (
     <Router>
+        <TranslationProvider>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Dashboard />} />
@@ -31,6 +35,7 @@ function App() {
           {/* <Route path="/post/*" element={<BlogLayout />} /> */}
         </Route>
       </Routes>
+      </TranslationProvider>
     </Router>
   );
 }

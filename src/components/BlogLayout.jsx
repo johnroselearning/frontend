@@ -11,6 +11,8 @@ import SEO from './SEO';
 
 import blogPosts, { getBlogPostById, getBlogPostsByCategory, getRecentPosts } from '../data/blogPosts.js';
 
+// import { TranslationProvider } from '../contexts/TranslationContext'; // Import the provider
+
 
 const BlogLayout = () => {
   const { t } = useTranslation();
@@ -116,47 +118,52 @@ console.log('Blog post id:', blogPosts.id);
   // ];
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      <BlogHeader />
-      
-      <div className="flex max-w-7xl mx-auto">
-        <BlogSidebar 
-          activeCategory={activeCategory}
-          // onCategoryChange={setActiveCategory}
-           onCategoryChange={handleCategoryChange} // Pass the navigation handler
-        />
-        
-        <main className="flex-1 p-6">
-          <Routes>
-            <Route 
-              path="/" 
-              element={<BlogGrid posts={blogPosts} category={activeCategory} />} 
-            />
-            <Route 
-              path="/popular" 
-              element={<BlogGrid posts={blogPosts.slice(0, 2)} />} 
-            />
-            <Route 
-              path="/categories" 
-              element={<BlogGrid posts={blogPosts} category={activeCategory} />} 
-            />
-            <Route 
-              path="/destinations" 
-              element={<BlogGrid posts={blogPosts.filter(p => p.category === 'destinations')} />} 
-            />
-            <Route 
-              path="/post/:id" 
-              element={<BlogPostDetail posts={blogPosts} />} 
+    <>
+        {/* <TranslationProvider> */}
+        <div className="min-h-screen bg-gray-50">
+          <BlogHeader />
+          
+          <div className="flex max-w-7xl mx-auto">
+            <BlogSidebar 
+              activeCategory={activeCategory}
+              // onCategoryChange={setActiveCategory}
+              onCategoryChange={handleCategoryChange} // Pass the navigation handler
             />
             
-            <Route 
-              path="/about-kerala" 
-              element={<AboutKeralaPage />} 
-            />
-          </Routes>
-        </main>
-      </div>
-    </div>
+            <main className="flex-1 p-6">
+              <Routes>
+                <Route 
+                  path="/" 
+                  element={<BlogGrid posts={blogPosts} category={activeCategory} />} 
+                />
+                <Route 
+                  path="/popular" 
+                  element={<BlogGrid posts={blogPosts.slice(0, 2)} />} 
+                />
+                <Route 
+                  path="/categories" 
+                  element={<BlogGrid posts={blogPosts} category={activeCategory} />} 
+                />
+                <Route 
+                  path="/destinations" 
+                  element={<BlogGrid posts={blogPosts.filter(p => p.category === 'destinations')} />} 
+                />
+                <Route 
+                  path="/post/:id" 
+                  element={<BlogPostDetail posts={blogPosts} />} 
+                />
+                
+                <Route 
+                  path="/about-kerala" 
+                  element={<AboutKeralaPage />} 
+                />
+              </Routes>
+            </main>
+          </div>
+        </div>
+     {/* </TranslationProvider> */}
+     </>
+
   );
 };
 

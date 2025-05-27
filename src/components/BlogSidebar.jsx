@@ -5,6 +5,9 @@ import { useTranslation } from '../hooks/useTranslation';
 const BlogSidebar = ({ activeCategory, onCategoryChange }) => {
   const { t } = useTranslation();
   const location = useLocation();
+  console.log('BlogSidebar rendered with activeCategory::', activeCategory);
+  console.log(t('blog.menu.categories'));
+ 
 
   const menuItems = [
     { id: 'latest', label: t('blog.menu.latest'), path: '/blog' },

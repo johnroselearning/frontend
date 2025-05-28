@@ -10,8 +10,8 @@ import GenerateItinerary from './pages/GenerateItinerary';
 import KeralaGuide from "./pages/KeralaGuide";
 import Kerala from "./routes/Kerala";
 import BlogLayout from './components/BlogLayout';
-
 import { TranslationProvider } from './contexts/TranslationContext'; // Import the provider
+import AppComponent from './tool_component/AppComponent';
 
 
 function App() {
@@ -20,20 +20,22 @@ function App() {
     <Router>
         <TranslationProvider>
       <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Dashboard />} />
+        {/* <Route path="/" element={<Layout />}> */}
+        <Route path="/" element={<AppComponent />} />
+          {/* <Route index element={<Dashboard />} />
           <Route path="places" element={<Places />} />
           <Route path="bookings" element={<Bookings />} />
           <Route path="settings" element={<Settings />} />
-          <Route path="chatbot" element={<ChatBot />} />
+          <Route path="chatbot" element={<ChatBot />} /> */}
           <Route path="blogsection" element={<BlogSection />} />
           <Route path="generateItinerary" element={<GenerateItinerary />} />
           <Route path="KeralaGuide" element={<KeralaGuide />} />
           <Route path="Kerala" element={<Kerala />} />
           <Route path="/bloglayout/*" element={<BlogLayout />} />
           <Route path="/blog/*" element={<BlogLayout />} />
+          
           {/* <Route path="/post/*" element={<BlogLayout />} /> */}
-        </Route>
+        {/* </Route> */}
       </Routes>
       </TranslationProvider>
     </Router>

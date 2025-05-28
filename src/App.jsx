@@ -12,7 +12,7 @@ import Kerala from "./routes/Kerala";
 import BlogLayout from './components/BlogLayout';
 import { TranslationProvider } from './contexts/TranslationContext'; // Import the provider
 import AppComponent from './tool_component/AppComponent';
-
+import TravelHomepage from './tool_component/TravelHomepage';
 
 function App() {
   console.log("App component rendered");
@@ -21,7 +21,10 @@ function App() {
         <TranslationProvider>
       <Routes>
         {/* <Route path="/" element={<Layout />}> */}
-        <Route path="/" element={<AppComponent />} />
+        {/* <Route path="/" element={<AppComponent />} /> */}
+        <Route path="/" element={<TravelHomepage />} />
+        
+        
           {/* <Route index element={<Dashboard />} />
           <Route path="places" element={<Places />} />
           <Route path="bookings" element={<Bookings />} />
@@ -33,6 +36,8 @@ function App() {
           <Route path="Kerala" element={<Kerala />} />
           <Route path="/bloglayout/*" element={<BlogLayout />} />
           <Route path="/blog/*" element={<BlogLayout />} />
+          <Route path="/itinerary-builder/*" element={<AppComponent />} />
+
           
           {/* <Route path="/post/*" element={<BlogLayout />} /> */}
         {/* </Route> */}

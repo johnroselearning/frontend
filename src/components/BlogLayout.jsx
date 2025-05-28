@@ -153,10 +153,10 @@ console.log('Blog post id:', blogPosts.id);
                   element={<BlogPostDetail posts={blogPosts} />} 
                 />
                 
-                <Route 
+                {/* <Route 
                   path="/about-kerala" 
                   element={<AboutKeralaPage />} 
-                />
+                /> */}
               </Routes>
             </main>
           </div>

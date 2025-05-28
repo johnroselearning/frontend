@@ -462,6 +462,8 @@ const AppComponent = () => {
   const [activeSubItem, setActiveSubItem] = useState('itinerary-builder');
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
 
+
+ 
   // Top horizontal menu - Marketing/Info focused
   const topNavItems = [
     { id: 'home', label: 'Home', icon: Home },
@@ -487,7 +489,8 @@ const AppComponent = () => {
       items: [
         { id: 'write-post', label: 'Write Post', icon: BookOpen },
         { id: 'my-posts', label: 'My Posts', icon: User, count: 12 },
-        { id: 'analytics', label: 'Analytics', icon: Settings }
+        { id: 'analytics', label: 'Analytics', icon: Settings },
+        { id: 'Posts', label: 'Post', icon: BookOpen }
       ]
     },
     about: {

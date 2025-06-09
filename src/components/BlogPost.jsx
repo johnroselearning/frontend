@@ -173,15 +173,58 @@ const BlogPost = ({ post, isPreview = true }) => {
 
   // Function to render content safely
   const renderContent = (content) => {
+    console.log(content.includes('<'));
+    console.log(content);
+    console.log(typeof content);
+
+    if (Array.isArray(content)) {
+    console.log('Rendering array content');
+    return content.map((item, index) => {
+      // Each array item might contain HTML or plain text
+      if (typeof item === 'string') {
+        // Clean up the string (remove extra whitespace and newlines)
+        const cleanedItem = item.trim();
+        
+        if (cleanedItem.includes('<')) {
+          // If it contains HTML, render as HTML
+          return (
+            <div 
+              key={index} 
+              className="mb-4" 
+              dangerouslySetInnerHTML={{ __html: cleanedItem }} 
+            />
+          );
+        } else {
+          // If it's plain text with markdown-like formatting, you can:
+          // Process markdown-like formatting (bold text)
+          const processedText = cleanedItem.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+          return (
+            <p 
+              key={index} 
+              className="mb-4" 
+              dangerouslySetInnerHTML={{ __html: processedText }} 
+            />
+          );
+        }
+      }
+      return null;
+    }).filter(Boolean); // Remove any null values
+  }
+
+
     if (typeof content === 'string') {
       // If content contains HTML, render it as HTML
       if (content.includes('<')) {
+        console.log("paragraphs1" );
         return <div dangerouslySetInnerHTML={{ __html: content }} />;
       }
       // If it's plain text, split by paragraphs
       const paragraphs = content.split('\n\n');
+      console.log(paragraphs);;
+      console.log("paragraphs" );
       return paragraphs.map((paragraph, index) => (
         <p key={index} className="mb-4">{paragraph}</p>
+        
       ));
     }
     return content;

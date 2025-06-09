@@ -58,7 +58,7 @@ const TravelHomepage = () => {
 
             {/* Desktop Menu */}
             <div className="hidden md:flex items-center space-x-8">
-              {['Home', 'Blog', 'About', 'Contact', 'Itinerary Builder'].map((item) => (
+              {['Home', 'Blog', 'Itinerary Builder'].map((item) => (
                 <Link
                   key={item}
                   to={item === 'Home' ? '/' : `/${item.toLowerCase().replace(' ', '-')}`}

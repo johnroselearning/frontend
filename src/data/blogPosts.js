@@ -69,28 +69,136 @@
 const blogPosts = [
   
   // Destinations
+  // {
+  //   id: 1,
+  //   title: "Hidden Gems of Santorini",
+  //   category: "destinations",
+  //   author: "Maria K.",
+  //   date: "2024-05-20",
+  //   readTime: 6,
+  //   image: "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?w=400",
+  //   excerpt: "Discover the lesser-known spots in this Greek paradise that most tourists miss.",
+  //   content: "Beyond the iconic blue domes and bustling streets of Oia, Santorini hides secret coves, vineyards, and ancient ruins that many travelers overlook. Venture to Pyrgos for a quiet village vibe, or explore the volcanic beaches of Vlychada and Koloumbos. These spots offer serenity and authenticity far from the cruise ship crowds."
+  // },
   {
     id: 1,
-    title: "Hidden Gems of Santorini",
+    title: "Eco-Tourism Facts That’ll Blow Your Forest-Lovin’ Mind",
     category: "destinations",
     author: "Maria K.",
     date: "2024-05-20",
     readTime: 6,
     image: "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?w=400",
     excerpt: "Discover the lesser-known spots in this Greek paradise that most tourists miss.",
-    content: "Beyond the iconic blue domes and bustling streets of Oia, Santorini hides secret coves, vineyards, and ancient ruins that many travelers overlook. Venture to Pyrgos for a quiet village vibe, or explore the volcanic beaches of Vlychada and Koloumbos. These spots offer serenity and authenticity far from the cruise ship crowds."
+    // content: "Beyond the iconic blue domes and bustling streets of Oia, Santorini hides secret coves, vineyards, and ancient ruins that many travelers overlook. Venture to Pyrgos for a quiet village vibe, or explore the volcanic beaches of Vlychada and Koloumbos. These spots offer serenity and authenticity far from the cruise ship crowds."
+    //content: "Kerala's eco-tourism model is truly innovative and impactful. **Fact #1: Ex-Poachers Are Now TikTok-Worthy Guides.** Many trail guides were once poachers, now dedicated protectors of wildlife. **Fact #2: Eco-Tourism in Kerala Has a QR Code for Everything.** From digital bookings to POS payments in the jungle, technology streamlines the experience. **Fact #3: Every Ticket = Direct Support to Tribal Families.** Half of all eco-tourism revenue directly supports local communities. **Fact #4: You Can Sleep in a Treehouse in a Tiger Reserve.** Gavi offers authentic treehouse stays, providing a true wilderness experience. **Fact #5: There’s a Bird That Sounds Like a Lo-Fi Playlist.** The Malabar Whistling Thrush's serene calls are a natural soundtrack. **Fact #6: Kerala’s Forests Are Protected by AI.** The forest department uses AI and drones for monitoring fires, poaching, and wildlife. **Fact #7: Kerala's Model Is Being Copied Worldwide.** Countries like Costa Rica and Kenya are adopting Kerala's successful approach. **Fact #8: Want Real Influence? Try Being a Forest Guardian.** Engage in activities like planting trees or joining cleanups for meaningful impact. **Fact #9: Forest Bathing is a Thing—and It’s Free Here.** Walking in these forests reduces anxiety and boosts immunity. **Fact #10: Some Trail Guides Can Imitate Over 100 Bird Calls.** Experience an incredible auditory journey with guides who can mimic a vast array of bird sounds."
+content: [
+    '  **Fact #1: Ex-Poachers Are Now TikTok-Worthy Guides.** Many trail guides were once poachers, now dedicated protectors of wildlife. ',
+    `  **Fact #2: Eco-Tourism in Kerala Has a QR Code for Everything.** From digital bookings to POS payments in the jungle, technology streamlines the experience.`,
+    "**Fact #3: Every Ticket = Direct Support to Tribal Families.** Half of all money from eco-tourism goes straight to the community. You’re not funding some corporate resort—you’re putting food on the table for forest-fringe families.",
+    "**Fact #4: You Can Sleep in a Treehouse in a Tiger Reserve.** Gavi offers real treehouses. Not glamping. Real. Forest. Air. No fake jungle wallpaper. Just you, a misty dawn, and maybe an elephant trumpet wake-up call.",
+    "**Fact #5: There’s a Bird That Sounds Like a Lo-Fi Playlist.** The Malabar Whistling Thrush—aka “Whistling Schoolboy”—sings tunes so chill, you’ll want it on your Spotify. Nature invented lo-fi before YouTube did.",
+    "**Fact #6: Kerala’s Forests Are Protected by AI.** The forest department uses AI and drones to monitor fires, poaching, and wildlife movements. So yeah, it’s like Black Mirror—but ethical.",
+    "**Fact #7: Kerala's Model Is Being Copied Worldwide.** Costa Rica, Kenya, and even Bhutan are studying Kerala’s model. So technically, eco-tourism here is internationally viral—just without the hashtag.",
+    "**Fact #8: Want Real Influence? Try Being a Forest Guardian.** Instead of just posting #SaveThePlanet, take a hike with a tribal guide. Plant a tree. Join a cleanup trail. It’s influence that matters. Offline but impactful.",
+    "**Fact #9: Forest Bathing is a Thing—and It’s Free Here.** Science backs it: walking in forests reduces anxiety and boosts immunity. In Kerala, it’s part of your trek package. No filters required.",
+    "**Fact #10: Some Trail Guides Can Imitate Over 100 Bird Calls.** Seriously. Sit with one over a campfire and close your eyes. It’s like opening the most peaceful Spotify playlist you’ve ever heard."
+   
+  ]
   },
   {
     id: 2,
-    title: "Tokyo's Best Neighborhoods",
+    title: "Kerala Eco-Tourism",
     category: "destinations",
     author: "Kenji S.",
     date: "2024-05-18",
     readTime: 6,
     image: "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=400",
     excerpt: "From bustling Shibuya to peaceful Yanaka, explore Tokyo's diverse districts.",
-    content: "Tokyo’s neighborhoods are worlds within themselves. Shibuya dazzles with neon lights and youth culture, while Yanaka offers a taste of old Edo with its traditional houses and family-run shops. Don't miss Shimokitazawa for its vintage flair and Kichijoji for a mix of urban life and lush parks."
+    content: `<h2><strong> The Silent Beginning</strong></h2>
+<p>Once, Kerala's forests were royal playgrounds. Game reserves for maharajas and British elites echoed with gunshots, not birdcalls. Locals watched from the margins, their knowledge unvalued, their survival uncertain.</p>
+<p><strong>Did you know?</strong> Kerala's first sanctuary, Periyar, was established in 1934—but it wasn’t meant to protect. It was meant to hunt.</p>
+<br/>
+<h2><strong>  Listening to the Forest's Voice</strong></h2>
+<p>By the 1990s, the winds began to change. Kerala realized that real conservation means inviting locals to the table. Or better yet—handing them the compass.</p>
+<p><em>What happened when ex-poachers became forest guides? The forest breathed a little easier.</em></p>
+<p>Thus began community-based eco-tourism, a bold, human-centered conservation model. The Periyar Tiger Trail was its heartbeat.</p>
+<p><strong>Curious fact:</strong> The first Tiger Trail guides had criminal records. Today, they lead conservation workshops for university students.</p>
+<br/>
+<h2><strong> Tourism That Touches the Soul</strong></h2>
+<p>In Kerala, tourism isn’t about collecting photos. It’s about feeling the heartbeat of the jungle.</p>
+<ul>
+  <li>Trek through Periyar's bamboo forests, guided by a former forest thief</li>
+  <li>Sleep in Gavi's treehouse, lulled by cicadas</li>
+  <li>Watch dawn mist roll over Ponmudi, where clouds kiss the hills</li>
+  <li>Hear the haunting song of the Malabar Whistling Thrush</li>
+</ul>
+<p><strong>True story:</strong> A tourist once burst into tears hearing a tribal elder mimic birdcalls. "I’ve never felt so small and connected," she said.</p>
+<br/>
+<h2><strong>  The Numbers That Matter</strong></h2>
+<ul>
+  <li><strong>80+</strong> eco-tourism centers across Kerala</li>
+  <li><strong>2,170+</strong> locals employed directly, <strong>10,000+</strong> indirectly</li>
+  <li><strong>₹60–80 crore</strong> annual revenue, 50% shared with communities</li>
+</ul>
+<p><strong>Unexpected twist:</strong> These aren’t just guides and guards. They are former smugglers, homemakers, even school dropouts who now lead scientific forest monitoring.</p>
+<br/>
+<h2><strong> The Responsible Traveller</strong></h2>
+<p>Kerala doesn’t just welcome you. It trusts you.</p>
+<ul>
+  <li><strong>Carrying capacity rules:</strong> Because too many feet can kill a trail</li>
+  <li><strong>Polluter Pays principle:</strong> Your ticket helps clean what you might unknowingly harm</li>
+  <li><strong>Project Green Grass:</strong> A forest cleanup crew powered by locals</li>
+  <li><strong>Wildlife Insurance:</strong> You’re covered, just in case nature gets wild</li>
+</ul>
+<p><strong>Did you know?</strong> If 10 lakh tourists each paid just Rs 10 to local panchayats, Kerala would generate Rs 1 crore for sustainable development annually.</p>
+<br/>
+
+<h2><strong> Kerala's Global Legacy</strong></h2>
+<p>While many talk about sustainability, Kerala lives it.</p>
+<ul>
+  <li><strong>Eco-Tourism Authority:</strong> Oversees long-term planning</li>
+  <li><strong>Digital access:</strong> POS machines, online booking, guided maps</li>
+  <li><strong>Integrated circuits:</strong> Thattekkad, Thekkady, Gavi, Ponmudi, Athirappilly — all linked for mindful travel</li>
+</ul>
+<p><strong>Curious fact:</strong> Kerala's eco-tourism model has been studied by Bhutan, Kenya, and even Costa Rica.</p>
+<br/>
+<h2><strong>  For the Curious Explorer</strong></h2>
+<ul>
+  <li><strong>Thekkady:</strong> Meet a reformed sandalwood smuggler</li>
+  <li><strong>Gavi:</strong> Sleep in a tree where hornbills nest</li>
+  <li><strong>Thattekkad:</strong> Spot 300+ birds in 3 days</li>
+  <li><strong>Kottur:</strong> Walk the trail of elephants at dawn</li>
+</ul>
+<br/>
+<h2><strong> Come as a Traveller, Leave as a Protector</strong></h2>
+<p>Not all journeys are measured in miles. Some are measured in awareness.</p>
+<p>When you step into Kerala’s forests, you enter more than a scenic landscape. You step into a living, breathing classroom. Every birdcall is a lesson. Every footprint, a responsibility.</p>
+<p>You come to see elephants, but learn about harmony. You arrive with curiosity—and if you open your heart—you leave with purpose.</p>
+
+<p>The people you meet—former poachers, tribal guides, forest watchers—are not just hosts. They are living proof that change is possible when dignity is given.</p>
+<p>And you, the traveller, are not just a visitor. You are a witness. A supporter. A potential protector.</p>
+<br/>
+<h2>Final Word: Walk Gently</h2>
+<p>Kerala’s forests aren’t museums. They are living, breathing homes.</p>
+<p>Come not to conquer. Come to witness. <br>
+Come not to consume. Come to connect. <br>
+Come not as a tourist. Come as a temporary guardian of the wild.</p>
+<br/>
+<br/>
+<p><strong>KERALA ECO-TOURISM</strong><br>
+Where the wild is welcome. And so are you.</p>`
   },
+  // {
+  //   id: 2,
+  //   title: "Tokyo's Best Neighborhoods",
+  //   category: "destinations",
+  //   author: "Kenji S.",
+  //   date: "2024-05-18",
+  //   readTime: 6,
+  //   image: "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=400",
+  //   excerpt: "From bustling Shibuya to peaceful Yanaka, explore Tokyo's diverse districts.",
+  //   content: "Tokyo’s neighborhoods are worlds within themselves. Shibuya dazzles with neon lights and youth culture, while Yanaka offers a taste of old Edo with its traditional houses and family-run shops. Don't miss Shimokitazawa for its vintage flair and Kichijoji for a mix of urban life and lush parks."
+  // },
   {
     id: 3,
     title: "Bali's Secret Beaches",
